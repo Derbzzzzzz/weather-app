@@ -1,4 +1,5 @@
 import { getData } from "./API.js";
+import appendImages from "./images.js"
 
 async function searchData(event) {
   let search = document.getElementById("search");
@@ -24,6 +25,7 @@ function formListener() {
 }
 
 function pageSetup() {
+  appendImages();
   formListener();
 }
 
