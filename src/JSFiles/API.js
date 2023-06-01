@@ -21,7 +21,7 @@ async function getData(city) {
 
   if (data == 1) {
     console.log("Error!");
-    return;
+    return 1;
   }
 
   // console.log(data.location)

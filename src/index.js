@@ -1,4 +1,6 @@
 import "./CSS/main.css";
-import {getData} from "./JSFiles/API.js"
+import { pageSetup } from "./JSFiles/DOM.js"
 
-console.log(await getData("London"))
+window.onload = function(){
+    pageSetup()
+}
