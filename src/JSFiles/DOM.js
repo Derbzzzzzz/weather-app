@@ -83,7 +83,7 @@ function displayInfo(){
 async function pageSetup() {
   appendImages();
   formListener();
-  updateAll(await getData("London"))
+  updateAll(await getData("Saint Louis"))
   displayInfo();
 }
 
