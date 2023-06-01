@@ -40,7 +40,9 @@ a{
     gap: 10px;
 }
 
+
 .title-container>.material-symbols-outlined {
+  margin-top: 4px;
   font-size: 40px;
   font-variation-settings:
   'FILL' 0,
