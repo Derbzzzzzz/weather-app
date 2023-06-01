@@ -1,12 +1,16 @@
 :root{
-    --color-1: rgb(191, 226, 255);
-    --color-2: #888888;
-    --color-3: #dddddd;
-    --color-4: #EEEEEE;
+    --color-1: #03045e;
+    --color-2: #0077b6;
+    --color-3: #00b4d8;
+    --color-4: #90e0ef;
+    --color-5: #caf0f8;
 }
 
 body{
     margin: 0px;
+    min-width: none;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #content{
@@ -19,12 +23,17 @@ header {
     box-sizing: border-box;
     padding: 20px;
     height: 100px;
-    background-color: var(--color-1);
+    background-color: var(--color-4);
+}
+
+a{
+    all: unset;
+    cursor: pointer;
 }
 
 .title-container{
     height: 100%;
-    font-size: 50px;
+    font-size: 40px;
 
     display: flex;
     align-items: center;
@@ -32,7 +41,7 @@ header {
 }
 
 .title-container>.material-symbols-outlined {
-  font-size: 50px;
+  font-size: 40px;
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
@@ -41,8 +50,95 @@ header {
 }
 
 main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 1;
+
+    padding: 20px;
+    background-color: var(--color-5);
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#search{
+    box-sizing: border-box;
+    font-size: 20px;
+
+    border: 2px solid white;
+    border-radius: 30px;
+
+    padding: 15px;
+    padding-left: 20px;
+
+    width: 60%;
+    min-width: 350px;
+}
+
+#search:focus{
+    outline-style: solid;
+    border: 2px solid var(--color-2);
+    transition: border 0.3s;
+}
+
+.error{
+    font-size: 20px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 350px;
+    
+    background-color: var(--color-2);
+    color: white;
+}
+
+.city{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.country{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.weather{
+    font-size: 30px;
+}
+
+.sub-info{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-info>div{
+    width: 50%;
+}
+
+.temp{
+    font-size: 50px;
+}
+
+sup{
+    display: inline-block;
+    vertical-align: super;
+    font-size: 60%;
+}
+
+
 
 footer{
     display: flex;
@@ -52,7 +148,7 @@ footer{
 
     height: 75px;
     font-size: 1.5rem;
-    background-color: var(--color-1);
+    background-color: var(--color-4);
 }
 
 .footer-logo{

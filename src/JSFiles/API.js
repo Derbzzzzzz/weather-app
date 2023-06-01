@@ -30,6 +30,7 @@ async function getData(city) {
   let info = {};
 
   info.name = data.location.name;
+  info.weather = data.current.condition.text
   info.country = data.location.country;
   info.CTemp = data.current.temp_c;
   info.FTemp = data.current.temp_f;
