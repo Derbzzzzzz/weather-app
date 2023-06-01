@@ -11,17 +11,38 @@
 <body>
     <div id="content">
         <header>
-            <div class="title-container">
-                <span class="material-symbols-outlined">cyclone</span>
-                <div class="title">Cyclone Weather</div>
-            </div>
+            <a href="index.html">
+                <div class="title-container">
+                    <span class="material-symbols-outlined">cyclone</span>
+                    <div class="title">Cyclone Weather</div>
+                </div>
+            </a>
         </header>
         <main>
             <form onsubmit="return false">
-                <label for="search">Enter City Below!</label>
-                <input type="text" name="search" id="search">
+                <input type="text" name="search" id="search" placeholder="Enter City Here..." autocomplete="off">
+                <br>
                 <span class="error"></span>
             </form>
+
+            <div class="info">
+                <div class="main-info">
+                    <div class="city">London</div>
+                    <div class="country">United Kingdom</div>
+                    <div class="weather">Cloudy</div>
+                </div>
+                <div class="sub-info">
+                    <div class="temp">81<sup>&deg;F</sup></div>
+                    <div class="extra-info">
+                        <div class="feels-like">Feels Like: 90<sup>&deg;F</sup></div>
+                        <div class="humidity">Humidity: 34%</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </main>
         <footer>
             <div class="footer-copyright">Copyright</div>
