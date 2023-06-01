@@ -88,11 +88,15 @@ form{
 }
 
 .error{
+    height: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 .info{
-    display: flex;
+    display: none;
     flex-direction: column;
 
     font-size: 20px;

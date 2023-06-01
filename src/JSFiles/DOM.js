@@ -74,10 +74,17 @@ function updateHumidity(newHumidity){
   temp.textContent = newHumidity
 }
 
+function displayInfo(){
+  let info = document.querySelector(".info")
+  info.style.display = "flex"
+}
 
-function pageSetup() {
+
+async function pageSetup() {
   appendImages();
   formListener();
+  updateAll(await getData("London"))
+  displayInfo();
 }
 
 export { pageSetup };
