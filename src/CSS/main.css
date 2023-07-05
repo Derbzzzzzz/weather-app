@@ -7,7 +7,7 @@
 }
 
 html{
-    font-size: calc(min(5px + min(1vh, 0.7vw), 2vw));
+    font-size: calc(min(5px + min(0.9vh, 0.6vw), 1.8vw));
 }
 
 body{
@@ -109,11 +109,11 @@ form{
 
     font-size: 2rem;
     box-sizing: border-box;
-    padding: 5rem;
+    padding: 4rem;
     margin: 1rem;
-    /* max-width: 50rem; */
-    /* width: 40vw; */
-    min-width: 42rem;
+    max-width: 50rem;
+    width: 40vw;
+    min-width: 45rem;
     
     background-color: var(--color-2);
     color: white;
